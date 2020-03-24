@@ -2,83 +2,103 @@
 <html lang="en">
 
 <head>
-    <script src="https://use.fontawesome.com/releases/v5.3.0/js/all.js"></script>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/styles.css">
-    <title>Chat | Kakao Clone </title>
+  <script src="https://use.fontawesome.com/releases/v5.3.0/js/all.js"></script>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="css/styles.css" />
+  <title>Chat | Kakao Clone</title>
 </head>
 
-<body>
+<body class="chats-body">
+  <div class="header-wrapper">
     <div class="status-bar">
-        <div class="statusbar__column">
-            <span class="status-bar__clock">13:54</span>
-        </div>
-        <div class="statusbar__column">
-            <i class="fas fa-clock"></i>
-            <i class="fas fa-volume-mute"></i>
-            <i class="fas fa-wifi"></i>
-            <i class="fas fa-ban"></i>
-            <span class="status-bar__battery-level">100%</span>
-            <i class="fas fa-battery-full"></i>
-        </div>
+      <div class="statusbar__column">
+        <span class="status-bar__clock">13:54</span>
+      </div>
+      <div class="statusbar__column">
+        <i class="fas fa-clock"></i>
+        <i class="fas fa-volume-mute"></i>
+        <i class="fas fa-wifi"></i>
+        <i class="fas fa-ban"></i>
+        <span class="status-bar__battery-level">100%</span>
+        <i class="fas fa-battery-full"></i>
+      </div>
     </div>
     <header class="header">
-        <div class="header__header-column">
-            <a href="index.html" class="header__back-btn">
-                <i class="fas fa-arrow-left fa-2x"></i>
-            </a>
-            <h1 class="header__title">동핸</h1>
-        </div>
-        <div class="header__header-column">
-            <span class="header__icon">
-                <i class="fas fa-search"></i>
-            </span>
-            <span class="header_icon">
-                <i class="fas fa-bars"></i>
-            </span>
-        </div>
+      <div class="header__header-column">
+        <a href="index.html" class="header__back-btn">
+          <i class="fas fa-arrow-left fa-2x"></i>
+        </a>
+        <h1 class="header__title">동핸</h1>
+      </div>
+      <div class="header__header-column">
+        <span class="header__icon">
+          <i class="fas fa-search" id="search-icon"></i>
+        </span>
+        <span class="header_icon">
+          <i class="fas fa-bars"></i>
+        </span>
+      </div>
     </header>
-    <main class="chat">
-        <ul class="chat__messages">
-            <span class="chat_timestamp">Saturday, Febuary 22,2020</span>
-            <li class="incoming-message message">
-                <img src="Images/donghyun.jpg" class="g-avatar message__avatar" width=100px>
-                <div class="message__content">
-                    <span class="message__author">용해니</span>
-                    <div class="message__bubble">
-                        축하행!!!
-                    </div>
-                </div>
-                <span class="message__timestamp"></span>
-            </li>
-            <li class="incoming-message message">
-                <span class="message__timestamp"></span>
-                <div class="message__content">
-                    <div class="message__bubble">
-                        축하행!!!
-                    </div>
-                </div>
-            </li>
-        </ul>
-        <div class="chat__write">
-            <div class="chat__write-column">
-                <i class="far fa-plus-square"></i>
-            </div>
-            <div class="chat__write-column">
-                <input type="text" placeholder="Send message" class="chat__write-input" />
-            </div>
-            <div class="chat__write-column">
-                <span class="chat__write-icon">
-                    <i class="far fa-smile-wink"></i>
-                </span>
-                <span class="chat__write-icon">
-                    <i class="fas fa-microphone"></i>
-                </span>
+  </div>
 
-            </div>
+  <main class="chat-screen">
+    <ul class="chat__messages">
+      <span class="chat__timestamp">Saturday, Febuary 22,2020</span>
+      <li class="incoming-message message">
+        <img src="Images/donghyun.jpg" class="g-avatar message__avatar" width="100px" />
+        <div class="message__content">
+          <span class="message__author">용해니</span>
+          <div class="message__bubble">
+            축하행!!!
+          </div>
         </div>
-    </main>
+      </li>
+      <li class="sent-message message">
+        <div class="message__content">
+          <div class="message__bubble">
+            고마웡!!!
+          </div>
+        </div>
+      </li>
+    </ul>
+    <ul class="chat__messages">
+      <li class="incoming-message message">
+        <img src="Images/donghyun.jpg" class="g-avatar message__avatar" width="100px" />
+        <div class="message__content">
+          <span class="message__author">용해니</span>
+          <div class="message__bubble">
+            밥먹었눙?
+          </div>
+        </div>
+      </li>
+      <li class="sent-message message">
+        <div class="message__content">
+          <div class="message__bubble">
+            먹었쩨!!!
+          </div>
+        </div>
+      </li>
+    </ul>
+    <div class="chat__write-container">
+      <input class="chat__write" type="text" placeholder="Send message" class="chat__write-input" />
+      <div class="chat__icon-left chat__icon">
+        <i class="far fa-plus-square"></i>
+      </div>
+      <div class="chat__icon-right chat__icon">
+        <span class="chat__write-icon">
+          <i class="far fa-smile-wink"></i>
+        </span>
+        <span class="chat__write-icon">
+          <i class="fas fa-microphone"></i>
+        </span>
+      </div>
+    </div>
+  </main>
+
+  <div class="bigScreen">
+    <span class="bigScreen__text">스크린 크기를 작게 만들어주세요</span>
+  </div>
 </body>
 
 </html>

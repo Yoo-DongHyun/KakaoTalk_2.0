@@ -35,5 +35,24 @@
     justify-content: center;
     align-items: center;
     border-radius: 50%;
-
 }
+
+/* 이건 사용해도 되고 안해도 됨 
+    나는 안쓰는게 더 좋아서... 지워놓겠음
+@keyframes showNavBar {
+    from {
+        transform: translateY(80px);
+    }
+
+    to {
+        transform: none;
+    }
+}
+
+.nav {
+    transform: translateY(80px);
+    animation: showNavBar 0.5s ease-out forwards;
+    animation-delay: 1s;
+}
+
+*/
